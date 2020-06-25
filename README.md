@@ -38,3 +38,5 @@ map은 배열의 각 아이템에 대해 실행되는 함수의 리턴값들에 
 7. Render jsx dynamically with map()
 
 8. Warning: Each child in a list should have a unique "key" prop.
+
+9. prop-types
