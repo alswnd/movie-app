@@ -40,3 +40,10 @@ map은 배열의 각 아이템에 대해 실행되는 함수의 리턴값들에 
 8. Warning: Each child in a list should have a unique "key" prop.
 
 9. prop-types
+
+10. state
+datas that change.
+but don't change data directly, because react doesn't call render() method again. use setState() then react call render() again. and use current parameter so that you can divided from outside state.
+
+11. class component
+render() method is automatically executed.
