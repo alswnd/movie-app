@@ -47,3 +47,5 @@ but don't change data directly, because react doesn't call render() method again
 
 11. class component
 render() method is automatically executed.
+
+12. narrow function vs normal function

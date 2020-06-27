@@ -9,7 +9,7 @@ class App extends React.Component {
   }
 
   boo() {
-    console.log('boo is working');
+    // this.setState({ count: 1000 }); // error!
   }
 
   add = () => {
