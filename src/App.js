@@ -3,8 +3,9 @@ import React from 'react';
 import './App.css';
 // import PropTypes from 'prop-types';
 import axios from 'axios';
+import Movie from './Movie';
 
-const URL = 'https://yts-proxy.now.sh/list_movies.json';
+const URL_SORT_BY_RATING = 'https://yts-proxy.now.sh/list_movies.json?sort_by=rating';
 
 class App extends React.Component {
   state = {
@@ -17,7 +18,7 @@ class App extends React.Component {
       data: {
         data: { movies }
       }
-    } = await axios.get(URL);
+    } = await axios.get(URL_SORT_BY_RATING);
     this.setState({ isLoading: false, movies });
   }
 
@@ -26,11 +27,16 @@ class App extends React.Component {
   }
 
   render() {
-    const { isLoading } = this.state;
+    const { isLoading, movies } = this.state;
 
     return (
       <div>
-        {isLoading ? "Loading..." : "We are ready"}
+        <Movie id={1} year={2} title={'this '} />
+
+        {isLoading ? "Loading..." :
+          movies.map(movie => {
+            return <Movie key={movie.id} id={movie.id} year={movie.year} title={movie.title} summary={movie.summary} poster={movie.medium_cover_image} />
+          })}
       </div>
     );
   }
