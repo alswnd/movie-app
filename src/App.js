@@ -8,11 +8,17 @@ const URL = 'https://yts-proxy.now.sh/list_movies.json';
 
 class App extends React.Component {
   state = {
-    isLoading: true
+    isLoading: true,
+    movies: []
   }
 
   getMovies = async () => {
-    const movies = await axios.get(URL);
+    const {
+      data: {
+        data: { movies }
+      }
+    } = await axios.get(URL);
+    this.setState({ isLoading: false, movies });
   }
 
   componentDidMount() {
