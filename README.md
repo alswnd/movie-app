@@ -48,4 +48,7 @@ but don't change data directly, because react doesn't call render() method again
 11. class component
 render() method is automatically executed.
 
-12. narrow function vs normal function
+12. narrow function vs normal function.
+
+13. component life cycle of react.(https://reactjs.org/docs/react-component.html)
+which functions excuted for each event(update, mount, etc...). and they have an order.
