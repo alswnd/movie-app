@@ -52,3 +52,6 @@ render() method is automatically executed.
 
 13. component life cycle of react.(https://reactjs.org/docs/react-component.html)
 which functions excuted for each event(update, mount, etc...). and they have an order.
+
+14. data fetch(axios)
+axios.get() maybe takes some time so we need to wait it, using 'await' and 'async'.
