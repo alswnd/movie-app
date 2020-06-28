@@ -30,7 +30,7 @@ function Food({ fav }) {
 이런식으로 사용 가능
 
 5. javascript map
-map은 배열의 각 아이템에 대해 실행되는 함수의 리턴값들에 대한 배열을 리턴한다.
+map은 배열의 각 아이템에 대해 실행되는 함수의 리턴값들에 대한 배열을 리턴한다. and when return html in map method we need to add a unique key property.
 
 6. HTML in JS
 {} 안에 들어가면 자바스크립트 코드다.
