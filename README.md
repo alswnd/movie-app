@@ -65,3 +65,6 @@ also add "hompage" link to package.json.
 
 17. HashRouter in react-router-dom.
 react get component as url. so if you link '/home' then react will render every components that starts with '/home'. same with '/'. so we need give prop 'exact={true}'.
+
+18. <Link to>, not <a href>.
+when you are using a navigation with Link, it should be inside Router.
