@@ -6,19 +6,8 @@ import Home from './routes/Home';
 function App() {
   return (
     <HashRouter>
-
-      <Route path="/home" >
-        <h1>Home</h1>
-      </Route>
-
-      <Route path="/home/introduction" >
-        <h1>Introduction</h1>
-      </Route>
-
-      <Route path="/about">
-        <h1>About</h1>
-      </Route>
-      
+      <Route path="/" exact={true} component={Home} />
+      <Route path="/about" component={About} />
     </HashRouter>
   );
 }
