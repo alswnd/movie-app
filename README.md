@@ -62,3 +62,5 @@ using slice().
 16. deploy to github pages.
 add "deploy" and "predeploy" to package.json.
 also add "hompage" link to package.json.
+
+17. HashRouter in react-router-dom.
