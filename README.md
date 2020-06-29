@@ -58,3 +58,7 @@ axios.get() maybe takes some time so we need to wait it, using 'await' and 'asyn
 
 15. cut text in js.
 using slice().
+
+16. deploy to github pages.
+add "deploy" and "predeploy" to package.json.
+also add "hompage" link to package.json.
