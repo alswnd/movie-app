@@ -3,7 +3,7 @@ import React from 'react';
 import './App.css';
 // import PropTypes from 'prop-types';
 import axios from 'axios';
-import Movie from './Movie';
+import Movie from './components/Movie';
 
 const URL_SORT_BY_RATING = 'https://yts-proxy.now.sh/list_movies.json?sort_by=rating';
 
