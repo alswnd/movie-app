@@ -55,3 +55,6 @@ which functions excuted for each event(update, mount, etc...). and they have an 
 
 14. data fetch(axios)
 axios.get() maybe takes some time so we need to wait it, using 'await' and 'async'.
+
+15. cut text in js.
+using slice().
