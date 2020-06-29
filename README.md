@@ -68,3 +68,5 @@ react get component as url. so if you link '/home' then react will render every 
 
 18. <Link to>, not <a href>.
 when you are using a navigation with Link, it should be inside Router.
+
+19. history.push()

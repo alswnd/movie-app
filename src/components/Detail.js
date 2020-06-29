@@ -1,9 +1,25 @@
 import React from 'react';
+import { HashRouter, Link } from 'react-router-dom';
 
-function Detail(props) {
-    console.log(props);
+class Detail extends React.Component {
+    componentDidMount() {
+        const { location, history } = this.props;
 
-    return <span>Hello detail</span>;
+        if (location.state === undefined) {
+            history.push("/");
+        }
+    }
+
+    render() {
+        const { location } = this.props;
+        if (location.state)
+            return (
+                <span>{location.state.title}</span>
+            )
+        else
+            return null;
+
+    }
 }
 
 export default Detail;
